@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx:stable-perl
+          image: ajatrokde/portfolio:v1
           ports:
             - containerPort: 80
