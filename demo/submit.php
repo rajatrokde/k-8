@@ -1,6 +1,6 @@
 <?php
 // Database connection
-$servername = "mysql-service";
+$servername = "mysql-service.default.svc.cluster.local";
 $username = "root";
 $password = "password";
 $dbname = "students";
