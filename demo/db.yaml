@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: rajatrokde/php-db
+          image: rajatrokde/database:latest
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: "password"
