@@ -5,6 +5,6 @@ CREATE TABLE students ( id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT
 
 
 Check the data in the table:
-USE simple_form;
+USE students
 
 SELECT * FROM submissions;
