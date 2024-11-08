@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: raj
-          image: rajatrokde/php-db
+          image: rajatrokde/k-8-fe:v1
           ports:
             - containerPort: 80
           resources: {}
