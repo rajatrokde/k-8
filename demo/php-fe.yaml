@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: raj-deployment
 spec:
-  replicas: 1  # Number of pod replicas in the ReplicaSet
+  replicas: 12 # Number of pod replicas in the ReplicaSet
   selector:
     matchLabels:
       app: raj
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: raj
-          image: rajatrokde/php-backend
+          image: rajatrokde/k-8-fe:latest
           ports:
             - containerPort: 80
           resources: {}
