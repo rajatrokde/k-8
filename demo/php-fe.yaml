@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: raj-deployment
 spec:
-  replicas: 12 # Number of pod replicas in the ReplicaSet
+  replicas: 1# Number of pod replicas in the ReplicaSet
   selector:
     matchLabels:
       app: raj
