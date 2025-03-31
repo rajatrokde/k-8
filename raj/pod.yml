@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: rajatrokde/portfolio:v1
+          image: nginx
           ports:
             - containerPort: 80
