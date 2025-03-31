@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 100 # Number of replicas
+  replicas: 25 # Number of replicas
   selector:
     matchLabels:
       app: nginx
