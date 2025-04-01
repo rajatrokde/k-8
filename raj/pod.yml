@@ -15,7 +15,12 @@ spec:
         app: nginx
     spec:
       containers:
+<<<<<<< HEAD
         - name: youtube-clone
           image: rajatrokde/youtube-clone:v1
+=======
+        - name: nginx
+          image: nginx
+>>>>>>> parent of d7ebf6e (Update pod.yml)
           ports:
             - containerPort: 80
