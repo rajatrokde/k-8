@@ -13,7 +13,7 @@ spec:
         app: mysql
     spec:
       containers:
-        - name: mysql
+        - name: mysql-mysql
           image: rajatrokde/database:latest
           env:
             - name: MYSQL_ROOT_PASSWORD
