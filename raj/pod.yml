@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx
 spec:
-  replicas: 3 # Number of replicas
+  replicas: 2 # Number of replicas
   selector:
     matchLabels:
       app: nginx
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          #image: rajatrokde/portfolio:v1
-          image : rajatrokde/k8-mario:latest
+          image: rajatrokde/portfolio:v1
+          #image : rajatrokde/k8-mario:latest
           ports:
             - containerPort: 80
