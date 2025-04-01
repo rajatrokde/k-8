@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: rajatrokde/portfolio:v1
+          #image: rajatrokde/portfolio:v1
+          image : rajatrokde/k8-mario:latest
           ports:
             - containerPort: 80
