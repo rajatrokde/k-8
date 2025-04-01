@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: nginx
+          image: rajatrokde/youtube-clone:v1
           ports:
             - containerPort: 80
