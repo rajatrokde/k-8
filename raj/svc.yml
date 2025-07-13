@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: nginx-service
-  namespace: default
+  namespace: sonarqube
 spec:
   selector:
     app: nginx  # Must match the labels in the Deployment
