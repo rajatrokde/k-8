@@ -1,6 +1,10 @@
 
 # Terminal Command History for K8s Kind Voting App
+create minikube for liunx
 
+**curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+**
 ## 1. Creating and Managing Kubernetes Cluster with Kind
 
 - Clear terminal:
