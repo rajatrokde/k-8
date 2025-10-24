@@ -18,7 +18,7 @@ spec:
   source:
     repoURL: https://github.com/rajatrokde/k-8.git # Git repository containing the app manifests
     targetRevision: main        # Branch or tag to track in the repository
-    path: demo/  # Path within the repo where the manifests(kustomization) are located
+    path: argo/argocd-demos/image_ Updater/chai-app # Path within the repo where the manifests(kustomization) are located
   destination:
     server: https://kubernetes.default.svc # Kubernetes API server address (in-cluster)
     namespace: default           # Namespace in the cluster where app resources will be deployed
