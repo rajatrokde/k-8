@@ -11,7 +11,8 @@ DB_PATH = "/data/users.db"
 def index():
     return render_template("index.html")
 
-@app.route('/submit', methods=['POST'])
+
+@app.route('/submit', methods=['GET', 'POST'])
 def login():
     email = request.form['email']
     password = request.form['password']
