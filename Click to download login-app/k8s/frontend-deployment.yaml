@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: rajatrokde/frontend-login:latest
+          image: rajatrokde/frontendlogin:latest
           ports:
             - containerPort: 80
 ---
