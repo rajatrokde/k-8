@@ -1,14 +1,8 @@
-FROM python:3.9-slim
+FROM python:3.9
 
 WORKDIR /app
-
-
-RUN pip install flask
-
 COPY . .
 
-RUN mkdir -p /data
-
-EXPOSE 5000
+RUN pip install flask
 
 CMD ["python", "app.py"]
