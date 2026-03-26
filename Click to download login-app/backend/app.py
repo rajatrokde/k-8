@@ -9,7 +9,7 @@ DB_PATH = "/data/users.db"
 # ✅ Home route
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return "Backend is running"
 
 
 @app.route('/submit', methods=['GET', 'POST'])
