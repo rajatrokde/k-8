@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request
 import sqlite3
 import os
 
@@ -6,16 +6,17 @@ app = Flask(__name__)
 
 DB_PATH = "/data/users.db"
 
-# ✅ Home route
 @app.route('/')
 def index():
     return "Backend is running"
 
-
-@app.route('/submit', methods=['GET', 'POST'])
+@app.route('/submit', methods=['POST'])
 def login():
-    email = request.form['email']
-    password = request.form['password']
+    email = request.form.get('email')
+    password = request.form.get('password')
+
+    if not email or not password:
+        return "Missing data", 400
 
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
@@ -24,6 +25,7 @@ def login():
     c.execute("INSERT INTO users (email, password) VALUES (?, ?)", (email, password))
     conn.commit()
     conn.close()
+
     return "Login saved!"
 
 if __name__ == "__main__":
