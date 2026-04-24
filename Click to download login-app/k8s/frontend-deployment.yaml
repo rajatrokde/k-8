@@ -28,6 +28,7 @@ spec:
   selector:
     app: frontend
   ports:
-      port: 80
+     - port: 80
       targetPort: 80
-  type: ClusterIP
+      nodeport: 30007
+  type: NodePort
